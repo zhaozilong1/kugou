@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    list-style: none;
+}
+html,body,.box{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background: url("./timg.gif") no-repeat;
+    background-size: 100% 100%;
+}
+header{
+    width: 100o;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-y: scroll;
+    padding-bottom: 90px;
+    color: #fff;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background: #000;
+    display: flex;
+    a{
+        color: #fff;
+        flex: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.loading{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -50%;
+}
+.router-link-active{
+    background: orange;
+}
+.list{
+    padding: 0 20px;
+    li{
+        padding: 10px 0;
+        &>b{
+            padding-right: 10px;
+        }
+    }
+    .active{
+        background: rgba(255,255,255,.5);
+    }
+}
+.play{
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    div{
+        float: left;
+    }
+    .img{
+        width:50px;
+        height:50px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .kongzhi{
+        line-height: 50px;
+        padding: 0 20px;
+        i{
+            font-size: 30px;
+        }
+        .last{
+            
+        }
+    }
+}
+marquee{
+    display: block;
+    width: 30%;
+    height: 50px;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+}
+.jia{
+    width: 80%;
+    height: 30px;
+    margin: 10px auto;
+    background: #eee;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 80px;
+}
+.dashang{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom:100px;
+    right:0;
+    div{
+        width: 50px;
+        height: 50px;
+        background: rgba(34, 31, 31, 0.5);
+        text-align: center;
+        line-height: 50px;
+        i{
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+}
+.daye{
+    width: 100%;
+    height: 95%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background: rgba($color: #fff, $alpha: .3);
+    .x{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: rgba($color: #fff, $alpha: 0);
+        right: 10px;
+        top: -70px;
+        line-height: 30px;
+        text-align: center;
+        i{
+           font-size: 25px; 
+        }
+    }
+    div{
+        margin: 20% 0 0 25%;
+        width: 150px;
+        height: 180px;
+        overflow: hidden;
+        background: rgb(7, 7, 7);
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        P{
+            width: 100%;
+            height: 30px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 30px;
+            background: rgb(52, 53, 40);
+            color: #fff;
+        }
+        .wximg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
